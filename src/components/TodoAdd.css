@@ -1,0 +1,124 @@
+.nolist{
+    width: inherit;
+
+}
+
+.ToDoApp{
+    display: grid;  
+    width: 100%;
+    height: 100%;
+}
+
+.upcoming{
+    padding: 0 25px;
+    margin-top: -20px;
+}
+
+.finished{
+    padding:0 25px;
+    margin-top: -10px;
+}
+
+.upcoming h3, .finished h3 {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-family: Roboto, sans-serif;
+    color: whitesmoke;
+    text-shadow: 0.1em 0.05em 0.2em #f3ecec;
+}
+
+.itemup{
+    width: inherit;
+    background: white;
+    /* height: 40px; */
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    /* line-height: 35px; */
+    color: #555555;
+}
+
+.itemup:last-child{
+    margin-bottom: 0px;
+}
+
+.itemdone{
+    width: inherit;
+    background: #8fd3dd;
+    /* height: 40px; */
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    /* line-height: 35px; */
+    color: #fff;
+    text-decoration: line-through;
+    box-shadow: 0.1em 0.1em 0.6em #8a94e9;
+}
+
+
+.itemdone:last-child{
+    margin-bottom: 0px;
+    border-bottom: 2px solid #8ab9df;
+}
+
+.overup{
+    overflow: auto;
+    height: 190px;
+}
+
+.overfinished{
+    overflow: auto;
+    height: 120px;
+}
+
+
+#style-scroll::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px #7cc7d1;
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-scroll::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px #7cc7d1;
+	background-color: #116a77;
+}
+
+
+#style-scroll-up::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px #7cc7d1;
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-scroll-up::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-scroll-up::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px #7cc7d1;
+	background-color: #116a77;
+}
+

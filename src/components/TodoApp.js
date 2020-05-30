@@ -1,8 +1,45 @@
 import React, {Component} from 'react';
+import nolist from '../img/no-list.svg';
+import './TodoAdd.css'
+
 
 export default class TodoApp extends Component {
   render() {
-    return 'Todo App';
+    
+    let {listItems, onDone} = this.props;
+    
+    if(!listItems || listItems.length === 0){
+      return <img className="nolist" src={nolist} alt="logo-nolist"/>;
+    }
+    return (
+      <div className="ToDoApp">
+        <div className="upcoming">
+          <h3>upcoming</h3>
+          <div className="overup" id="style-scroll-up">
+          { listItems.map(function(x, index){
+              if(x.isDone === false){              
+                return (               
+                  <div key={index} className="itemup" onClick={onDone(x)}>{index +1}. {x.title}</div>
+                )              
+              }            
+            })
+          }
+          </div>
+        </div>
+        <div className="finished">
+          <h3>finished</h3>
+          <div className="overfinished" id="style-scroll">
+          { listItems.map(function(x, index){
+              if(x.isDone === true){              
+                return (<div key={index} className="itemdone" onClick={onDone(x)}>{index +1}. {x.title}</div>)              
+              }            
+            })
+          }
+          </div>
+        </div>
+      </div>
+    );
+    
   }
 }
 
